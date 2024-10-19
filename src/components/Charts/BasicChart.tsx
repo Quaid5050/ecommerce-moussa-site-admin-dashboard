@@ -1,8 +1,15 @@
 "use client";
 
-import ChartThree from "@/components/Charts/ChartThree";
 import React from "react";
-import ChartFive from "@/components/Charts/ChartFive";
+import dynamic from "next/dynamic";
+
+const ChartThree = dynamic(() => import("../Charts/ChartThree"), {
+  ssr: false,
+});
+
+const ChartFive = dynamic(() => import("../Charts/ChartFive"), {
+  ssr: false,
+});
 
 const BasicChart: React.FC = () => {
   return (

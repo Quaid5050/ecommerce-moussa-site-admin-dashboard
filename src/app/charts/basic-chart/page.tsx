@@ -13,7 +13,6 @@ const BasicChartPage: React.FC = () => {
   return (
     <>
       <Breadcrumb pageName="Basic Chart" />
-
       <BasicChart />
     </>
   );
